@@ -20,7 +20,7 @@ describe("Авторизация + Создание хранилища", () => {
         cy.get(':nth-child(1) > :nth-child(2) > .v-input > .v-input__control > .v-input__slot').type(faker.helpers.replaceSymbols('************'))
         cy.get(':nth-child(2) > .col > .v-input > .v-input__control > .v-input__slot').type(faker.lorem.paragraphs(2))
         //cy.get(':nth-child(3) > :nth-child(2) > .v-input > .v-input__control > .v-input__slot').click()
-        //cy.get('id="list-item-1804-2"').click()
+        //cy.get('id="list-item-1804-2"').click() //слетает выбор из дропа
         cy.get(':nth-child(4) > :nth-child(1) > .v-input > .v-input__control > .v-input__slot > .v-text-field__slot').type(10000000)
         cy.get(':nth-child(4) > :nth-child(2) > .v-input > .v-input__control > .v-input__slot > .v-text-field__slot').type(20000000)
         cy.get(':nth-child(4) > :nth-child(3) > .v-input > .v-input__control > .v-input__slot > .v-text-field__slot').type(9000000)
